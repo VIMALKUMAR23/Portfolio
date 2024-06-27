@@ -62,9 +62,10 @@ header{
 
     nav{
         display: flex;
+        align-items: center; /*made alignment center*/
         ul{
             display: flex;
-            list-style: none;
+            list-style-type: none;
             gap:5px;
            li{
             display: inline-block;
@@ -79,6 +80,36 @@ header{
                 }
             }
             }
+        }
+        .mobile-toggle{
+            display: none;
+            color: var(--base);
+            padding: 10px;
+            @media (max-width:768px){
+                display: inline-block;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+        }
+    }
+
+    @media (max-width:768px){
+        flex-direction: column;
+        align-items: center;
+        nav{
+            margin: 10px;
+            width: 100%;
+            ul{
+                display: none;
+                flex-direction: column;
+                text-align: center;
+                width: 100%;
+                &:active{
+                    display: flex;
+                }
+            }
+            
         }
     }
 }
