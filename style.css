@@ -101,6 +101,9 @@ nav ul li a:hover {
 .container{
     max-width: 1440px;
     margin:auto;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .hero {
     display: flex;
@@ -114,7 +117,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 40px;
+    margin-left: 20px;
 
 }
 .hero-yellow{
@@ -125,7 +128,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 .hero-yellow img{
     margin-top: -60px;
@@ -133,7 +136,26 @@ nav ul li a:hover {
     margin-bottom: -10px;
 }
 
+.button{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: goldenrod;
+    border-radius:10px;
+
+}
+
+.button:hover{
+text-decoration: none;
+background-color: aquamarine;
+}
 /* media query start */
+/* Desktop screen  */
+@media (max-width:1440px){
+    .container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
 /**tablets **/
 @media(max-width:1024px){
     header {
