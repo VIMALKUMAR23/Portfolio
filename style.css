@@ -139,14 +139,49 @@ nav ul li a:hover {
 .button{
     display: inline-block;
     padding: 10px 30px;
-    background-color: goldenrod;
+    background-color: var(--base);
     border-radius:10px;
 
 }
 
+
 .button:hover{
 text-decoration: none;
-background-color: aquamarine;
+background-color: var(--base-light);
+}
+/* style for resume and contact me button  */
+.white{
+    background-color: var(--base-light);
+    color: black;
+    &:hover{
+        color: var(--base-500);
+    }
+}
+
+.black{
+    background-color: var(--base-light);
+    color: black;
+    &:hover{
+        color: var(--base-700);
+    }
+}
+/* call-to-action for margain set */
+.call-to-action{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    a{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+/* placing social link  */
+.social-links{
+    a{
+        &:hover{
+            text-decoration: none;
+        }
+    }
 }
 /* media query start */
 /* Desktop screen  */
