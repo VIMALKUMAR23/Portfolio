@@ -11,6 +11,11 @@
     --base-500: #088395;
     --base-700: #37B7C3;
     --base-light: #EBF4F6;
+    /* summer theme  */
+    --base-sec-100:#FEFFD2;  
+    --base-sec-200:#FFEEA9 ;
+    --base-sec-300:#FFBF78 ;
+    --base-sec-700:#FF7D29;
 }
 
 body {
@@ -122,12 +127,12 @@ nav ul li a:hover {
 }
 .hero-yellow{
     flex: 1;
-    background-color: yellow;
+    background-color: var(--base-sec-200);
     border-radius: 30px;
     padding: 0px 30px;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     margin-right: 20px;
 }
 .hero-yellow img{
@@ -151,7 +156,7 @@ background-color: var(--base-light);
 }
 /* style for resume and contact me button  */
 .white{
-    background-color: var(--base-light);
+    background-color: white;
     color: black;
     &:hover{
         color: var(--base-500);
@@ -159,8 +164,8 @@ background-color: var(--base-light);
 }
 
 .black{
-    background-color: var(--base-light);
-    color: black;
+    background-color: black;
+    color: white;
     &:hover{
         color: var(--base-700);
     }
@@ -245,5 +250,19 @@ background-color: var(--base-light);
         top: 20px;
         right: 20px;
     }
+
+    /* hero section in mobile  */
+    .hero {
+        flex-direction:column ;
+        
+        
+    }
+    .hero-yellow{
+        margin: 0px;
+    }
+    .hero-blue{
+        margin: 0px;
+    }
+    
 }
 
