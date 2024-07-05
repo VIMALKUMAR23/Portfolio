@@ -112,7 +112,7 @@ nav ul li a:hover {
 }
 .hero {
     display: flex;
-    margin-top: 30px;
+    
 }
 .hero-blue{
     flex: 1;
@@ -149,6 +149,16 @@ nav ul li a:hover {
 
 }
 
+h1{
+    font-size: 44px;
+    line-height: 1;
+    margin-bottom: 10px;
+    small{
+        display: block;
+        font-weight: 500;
+        margin-bottom: -40px;
+    }
+}
 
 .button:hover{
 text-decoration: none;
