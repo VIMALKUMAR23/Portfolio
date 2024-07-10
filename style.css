@@ -245,7 +245,7 @@ background-color: var(--base-light);
         display: block;
         font-weight: 100px;
         font-size: 1.75rem;
-        color: var(--base-sec-700);
+        color:gray ;
     }
 }
 
@@ -262,10 +262,26 @@ display: flex;
 
 .holder-blue .left-column{
 flex: 1;
+ul{
+    list-style: none;
+    gap: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    li{
+        display: inline-block;
+        background-color: lightskyblue;
+        padding: 10px 20px;
+        border-radius: 15px;
+        margin-bottom: 10px;
+    }
+}
 }
 
 .holder-blue .right-column{
 flex: 1;
+p{
+    margin-bottom: 20px;
+}
 }
 
 
