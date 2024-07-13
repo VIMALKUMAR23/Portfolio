@@ -249,9 +249,9 @@ background-color: var(--base-light);
     }
 }
 
-.skills{
+/* .skills{
 
-}
+} */
 
 .holder-blue{
 background-color: var(--base-700);
@@ -284,7 +284,37 @@ p{
 }
 }
 
+/* internship  */
+.intern{
+    margin: 40px;
+}
+.mern{
+    background-color: var(--base-700);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 20px;
+}
 
+.course-complete{
+    margin-bottom: 20px;
+}
+.course-complete img{
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+.course{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.progress-Bar{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    width: 60%;
+    margin:0px auto;
+}
+/* progress bar inside intern */
 
 /* media query start */
 /* Desktop screen  */
