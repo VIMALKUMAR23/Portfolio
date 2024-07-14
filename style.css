@@ -6,6 +6,7 @@
     padding: 0;
 }
 
+
 :root {
     --base: #071952;
     --base-500: #088395;
@@ -309,13 +310,25 @@ p{
 }
 
 .progress-Bar{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: var(--base-light);
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
     width: 60%;
     margin:0px auto;
+    border-radius: 30px;
+}
+
+ul li{
+    list-style: none;
 }
 /* progress bar inside intern */
-
+.step-list{
+ display: flex;
+ padding: 20px;
+ margin-left: 30px;
+}
+.step-list ul li{
+    margin-left: 15px;
+}
 /* media query start */
 /* Desktop screen  */
 @media (max-width:1440px){
