@@ -329,6 +329,44 @@ ul li{
 .step-list ul li{
     margin-left: 15px;
 }
+/* project file bento box - grid  */
+.M{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(4,1fr);
+
+}
+.grid-item{
+    padding: 30px;
+    background-color: var(--base);
+    border-radius: 15px;
+    &:nth-child(1){
+        grid-column:span 2;
+        grid-row:span 2 ;
+    }
+    &:nth-child(2){
+        grid-column:span 2;
+        grid-row:span 1;
+    }
+    &:nth-child(3){
+        grid-column:span 1;
+        grid-row:span 1 ;
+    }
+    &:nth-child(4){
+        grid-column:span 1;
+        grid-row:span 1 ;
+    }
+    &:nth-child(5){
+        grid-column:span 2;
+        grid-row:span 1 ;
+    }
+    &:nth-child(6){
+        grid-column:span 5;
+        grid-row:span 3 ;
+    }
+
+}
 /* media query start */
 /* Desktop screen  */
 @media (max-width:1440px){
